@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components'
 
 import image from '../../resources/splash-image.png'
@@ -8,7 +8,7 @@ const BackgroundContainer = styled.div`
   position: absolute;
   top: 0;
   width: 100%;
-  height: 200vh;
+  height: 100%;
   background-image: url(${image});
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,11 +16,11 @@ const BackgroundContainer = styled.div`
 `
 
 const Background = () => {
-    const heroElement = useRef(null)
+  const heroElement = useRef(null)
 
-    return(
-        <BackgroundContainer ref={heroElement} element={heroElement}/>
-    )
+  return (
+    <BackgroundContainer ref={heroElement} element={heroElement} />
+  )
 }
 
 export default Background
