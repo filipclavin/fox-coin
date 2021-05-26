@@ -1,5 +1,4 @@
 import Stages from './components/cards/Stages'
-import styled from 'styled-components';
 
 import { useState, useEffect } from 'react';
 import { createGlobalStyle } from 'styled-components';
@@ -22,6 +21,7 @@ body{
   background-image: url(${image});
   background-size: contain;
   background-repeat: no-repeat;
+  height: fit-content;
 }
 * {
   margin: 0;

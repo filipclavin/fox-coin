@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-const Desc = styled.div`
-  margin: 5% 15%;
+const Desc = styled.section`
+  margin: 10% 15%;
 
   h1 {
     font-size: 4em;
