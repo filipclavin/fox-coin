@@ -8,7 +8,7 @@ const StageWrapper = styled.div`
     align-content: space-around;
     width: 65%;
     height: 100%;
-    margin: 0 auto;
+    margin:0 auto;
     flex-wrap: wrap;
 `
 

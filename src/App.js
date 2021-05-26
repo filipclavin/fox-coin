@@ -25,10 +25,10 @@ body{
 `;
 
 const ContentWrapper = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
 `
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
   }, [])
 
   return (
-    <ContentWrapper>
+   <>
     <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav}/>
           <Switch>
@@ -59,9 +59,11 @@ function App() {
             </Route>
           </Switch>
       </Router>    
-      <Stages />   
+      <ContentWrapper>
+        <Stages />   
+      </ContentWrapper>
     <GlobalStyle />
-    </ContentWrapper>
+    </>
   );
 }
 
