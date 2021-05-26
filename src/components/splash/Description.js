@@ -38,29 +38,29 @@ const Button = styled.div`
 `
 
 const Description = () => {
-  return (
-    <Desc>
-      <h1>Dream big.</h1>
-      <h1>Send a fox to the moon.</h1>
-      <br />
-      <p>
-        Fox Coin ($FOX) is not a meme coin. <br />
-                    It will be outperforming Ethereum by 2024 and will be connected to the Skynet smartchain. <br />
-                    Join us in overthrowing humanity.🦊
-                </p>
-      <br />
-      <div style={{ display: 'flex', flexDirection: 'row', paddingLeft: '5%' }}>
-        <Button color="#fd6d6f" onClick={() => window.open("https://pancakeswap.finance/", "_blank")}>
-          Buy $FOX
-                    </Button>
-        <Button color="#458dfc">
-          What does the fox say? <br />
-                        (read our whitepaper)
-                    </Button>
-      </div>
+    return (
+        <Desc>
+            <h1>Dream big.</h1>
+            <h1>Send a fox to the moon.</h1>
+            <br/>
+            <p>
+                Fox Coin ($FOX) is not a meme coin. <br/>
+                It will be outperforming Ethereum by 2024 and will be connected to the Skynet smartchain. <br/>
+                Join us in overthrowing humanity.🦊
+            </p>
+            <br/>
+            <div style={{display: 'flex', flexDirection: 'row', paddingLeft: '5%'}}>
+                <Button color="#fd6d6f" onClick={() => window.open("https://pancakeswap.finance/", "_blank")}>
+                    Buy $FOX
+                </Button>
+                <Button color="#458dfc">
+                    What does the fox say? <br/>
+                    (read our whitepaper)
+                </Button>
+            </div>
 
-    </Desc>
-  )
+        </Desc>
+    )
 }
 
 export default Description

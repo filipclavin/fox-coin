@@ -50,6 +50,14 @@ const Stage = styled.div`
         bottom: -250px;
         transition: all 0.3s ease-in-out;
     }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin: 5px;
+  }
     
     &:hover {
         flex-wrap: nowrap;
