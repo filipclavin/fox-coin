@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 const Desc = styled.div`
-  margin-left: 15%;
-  margin-top: 25%;
+  position: absolute;
+  left: 15%;
+  top: 25%;
 
   h1 {
     font-size: 4em;

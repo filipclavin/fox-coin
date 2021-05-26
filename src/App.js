@@ -27,10 +27,10 @@ body{
 `;
 
 const ContentWrapper = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
 `
 
 
@@ -47,16 +47,16 @@ function App() {
   }, [])
 
   return (
-    <ContentWrapper>
-      <Background/>
-      <Description/>
+    <>
+        <Background/>
+        <Description/>
       <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
         <Switch>
           <Route path="/projects">
             {/* <Projects /> */}
           </Route>
-          <Route path="/Contact">
+          <Route path="/contact">
             {/* <Contact /> */}
           </Route>
           <Route path="/">
@@ -65,10 +65,12 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Stages />
+      <ContentWrapper>
+        <Stages />
+      </ContentWrapper>
       <GlobalStyle />
-    </ContentWrapper>
-  )
+    </>
+  );
 }
 
 export default App;
