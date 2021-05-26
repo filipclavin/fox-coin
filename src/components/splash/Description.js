@@ -12,13 +12,13 @@ const Desc = styled.div`
   p {
     font-weight: 200;
     padding-left: 5%;
-    color: whitesmoke;
   }
 `
 
 const Button = styled.div`
   position: relative;
   font-weight: 800;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,11 +49,11 @@ const Description = () => {
                 <p>
                     Fox Coin ($FOX) is not a meme coin. <br/>
                     It will be outperforming Ethereum by 2024 and will be connected to the Skynet smartchain. <br/>
-                    Join us in overthrowing humanity.
+                    Join us in overthrowing humanity.🦊
                 </p>
                 <br/>
                 <div style={{display: 'flex', flexDirection: 'row', paddingLeft: '5%'}}>
-                    <Button color="#fd6d6f">
+                    <Button color="#fd6d6f" onClick={() => window.open("https://pancakeswap.finance/", "_blank")}>
                         Buy $FOX
                     </Button>
                     <Button color="#458dfc">
@@ -61,7 +61,6 @@ const Description = () => {
                         (read our whitepaper)
                     </Button>
                 </div>
-
             </Desc>
     )
 }
