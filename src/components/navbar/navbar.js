@@ -86,8 +86,9 @@ const Nav = styled.nav`
       justify-content: space-around;
       align-items: center;
       transform: translate(0, 0);
-      background: rgba(203, 232, 209, 0.6);
+      background: transparent;
       border-radius: 20px;
+      box-shadow: none;
     }
   }
 

@@ -1,6 +1,6 @@
-import Jesper from '../../resources/jesper.jpg';
-import Filip from '../../resources/filip.jpg';
-import Melinda from '../../resources/melinda.png';
+import jesper from '../../resources/jesper.jpg';
+import filip from '../../resources/filip.jpg';
+import melinda from '../../resources/melinda.png';
 import styled from 'styled-components';
 
 const StyledFooter = styled.div`
@@ -53,19 +53,19 @@ const Footer = () => {
           <div className="team-member">
             <p className="name">Jesper Sjöström</p>
             <p>Guru (Developer)</p>
-            <a href="https://github.com/SjostromJesper"><img className="profile" src={Jesper} alt="Jesper" />
+            <a href="https://github.com/SjostromJesper"><img className="profile" src={jesper} alt="Jesper" />
             </a>
           </div>
           <div className="team-member">
             <p className="name">Filip Calvin</p>
-            <p>Hacker (General Developer)</p>
-            <a href="https://github.com/filipclavin"><img className="profile" src={Filip} alt="Filip" />
+            <p>Hacker (Developer)</p>
+            <a href="https://github.com/filipclavin"><img className="profile" src={filip} alt="Filip" />
             </a>
           </div>
           <div className="team-member">
             <p className="name">Melinda Sava</p>
             <p>Kick Ass Developer (Developer)</p>
-            <a href="https://github.com/mellyynda"><img className="profile" src={Melinda} alt="Melinda" /></a>
+            <a href="https://github.com/mellyynda"><img className="profile" src={melinda} alt="Melinda" /></a>
           </div>
         </div>
       </Team>
