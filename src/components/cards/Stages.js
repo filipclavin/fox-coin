@@ -44,18 +44,22 @@ const Stages = () => {
         <StageWrapper>
             <Stage>
                 <h2>Stage 1</h2>
+                <br />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, tenetur architecto obcaecati optio voluptates vitae in dolorem! Accusamus, illo minus.</p>
             </Stage>
             <Stage>
                 <h2>Stage 2</h2>
+                <br />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil vitae inventore dolore laboriosam modi quam delectus similique, est velit expedita quia cum! Voluptas, rerum!</p>
             </Stage>
             <Stage>
                 <h2>Stage 3</h2>
+                <br />
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt quaerat aliquam non perferendis neque, qui illum minus? Cupiditate nostrum amet libero. Iure fugiat facere fugit voluptate dolor ex accusantium incidunt!</p>
             </Stage>
             <Stage>
                 <h2>Stage 4</h2>
+                <br />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima omnis reiciendis. Sint expedita rem maiores facilis necessitatibus eveniet dolore placeat sed, reiciendis eum illo tenetur fuga soluta aliquam esse at natus, voluptatum excepturi vel. Atque pariatur illum enim harum?</p>
             </Stage>
         </StageWrapper>
