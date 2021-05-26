@@ -5,17 +5,20 @@ const StageWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     width: 65%;
     height: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
 `
 
 const Stage = styled.div`
     box-sizing: border-box;
     background-color: #C28449;
-    max-width: 275px;
+    width: 275px;
     height: 500px;
     padding: 25px;
+    margin: 25px 0;
     border-radius: 25px;
     box-shadow: -20px 20px 30px 5px #9c612a;
     transition: all 0.2s ease-in-out;
@@ -26,7 +29,7 @@ const Stage = styled.div`
     }
     
     &:hover {
-        max-width: 300px;
+        width: 300px;
         height: 600px;
         margin: 10px;
         h2 {
