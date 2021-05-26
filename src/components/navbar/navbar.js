@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import foxFace from '../../resources/sleepy_tired.png';
 
 const Nav = styled.nav`
 display: block;
@@ -86,13 +87,16 @@ ul a {
 ul li {
   font-size: 22px;
   padding: 25px 0;
+  img{
+    width:80px;
+  }
   span {
     font-family: 'Quicksand', sans-serif;
     border-top:3px solid #C28449;
   }
 }
 .clicked ~ ul {
-    transform: translate(0, 0);
+    transform: translate(100%, 0);
 }
 `
 
@@ -106,9 +110,10 @@ const Navbar = ({navToggleClicked, toggleNav}) => {
           <span></span>
       </div>
       <ul className="top-nav" id="js-menu">
-          <Link to="/" onClick={toggleNav}><li className="menu-item"><span>.Home</span></li></Link>
-          <Link to="/projects" onClick={toggleNav}><li className="menu-item"><span>.Projects</span></li></Link>
-          <Link to="/contact" onClick={toggleNav}><li id="contact" className="menu-item"><span>.Contact</span></li></Link>
+        <Link to="/" onClick={toggleNav}><li className="menu-item"><img src={foxFace} alt="logo"/></li></Link>
+        <Link to="/" onClick={toggleNav}><li className="menu-item"><span>.Home</span></li></Link>
+        <Link to="/projects" onClick={toggleNav}><li className="menu-item"><span>.Projects</span></li></Link>
+        <Link to="/contact" onClick={toggleNav}><li id="contact" className="menu-item"><span>.Contact</span></li></Link>
       </ul>       
     </Nav>
   </section>
