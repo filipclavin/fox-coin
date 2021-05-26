@@ -9,6 +9,8 @@ import {
   Route
 } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
+import Background from "./components/splash/Background.js";
+import Description from "./components/splash/Description.js";
 
 const GlobalStyle = createGlobalStyle`
 h1{
@@ -31,6 +33,7 @@ const ContentWrapper = styled.div`
   justify-content: center;
 `
 
+
 function App() {
   const [navToggleClicked, setNavToggleClicked] = useState(false);
 
@@ -44,25 +47,28 @@ function App() {
   }, [])
 
   return (
-   <>
-    <Router>
-        <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav}/>
-          <Switch>
-            <Route path="/projects">
-              {/* <Projects /> */}
-            </Route>
-            <Route path="/contact">
-              {/* <Contact /> */}
-            </Route>
-            <Route path="/">
-              {/* <Home /> */}
-            </Route>
-          </Switch>
-      </Router>    
+    <>
+        <Background/>
+        <Description/>
+      <Router>
+        <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
+        <Switch>
+          <Route path="/projects">
+            {/* <Projects /> */}
+          </Route>
+          <Route path="/contact">
+            {/* <Contact /> */}
+          </Route>
+          <Route path="/">
+            {/* <Home /> */}
+
+          </Route>
+        </Switch>
+      </Router>
       <ContentWrapper>
-        <Stages />   
+        <Stages />
       </ContentWrapper>
-    <GlobalStyle />
+      <GlobalStyle />
     </>
   );
 }
