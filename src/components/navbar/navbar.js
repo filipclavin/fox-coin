@@ -130,9 +130,9 @@ const Navbar = ({ navToggleClicked, toggleNav }) => {
           <span></span>
         </div>
         <ul className="top-nav" id="js-menu">
-          <Link to="/about" onClick={toggleNav}><li className="menu-item"><span>.About</span></li></Link>
-          <Link to="/roadmap" onClick={toggleNav}><li className="menu-item"><span>.Roadmap</span></li></Link>
-          <Link to="/team" onClick={toggleNav}><li id="contact" className="menu-item"><span>.Team</span></li></Link>
+          <Link to="/about" onClick={toggleNav}><li className="menu-item"><span>About.</span></li></Link>
+          <Link to="/roadmap" onClick={toggleNav}><li className="menu-item"><span>Roadmap.</span></li></Link>
+          <Link to="/team" onClick={toggleNav}><li id="contact" className="menu-item"><span>Team.</span></li></Link>
         </ul>
 
       </Nav>

@@ -7,7 +7,6 @@ import robotics from '../resources/robotics.svg'
 const SectionWrapper = styled.section`
     width: 65%;
     margin: 0 auto;
-    height: 700px;
     h1 {
         font-size: 50px;
     }
@@ -18,7 +17,7 @@ const StageWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     flex-wrap: wrap;
 
     @media screen and (min-width: 1693px) and (max-width: 1761px) {
@@ -101,7 +100,7 @@ const Stage = styled.div`
 const Stages = () => {
     return (
         <SectionWrapper>
-            <h1>Roadmap</h1>
+            <h1>Roadmap.</h1>
             <StageWrapper>
                 <Stage>
                     <h2>Stage 1</h2>
