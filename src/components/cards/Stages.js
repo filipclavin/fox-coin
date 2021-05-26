@@ -7,9 +7,24 @@ const StageWrapper = styled.div`
     align-items: center;
     align-content: space-around;
     width: 65%;
-    height: 100%;
-    margin:0 auto;
+    height: 600px;
+    margin: 0 auto;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 1693px) and (max-width: 1761px) {
+        flex-wrap: nowrap;
+    }
+
+    @media screen and (min-width: 1270px) and (max-width: 1338px) {
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    @media screen and (min-width: 847px) and (max-width: 915px) {
+        margin-top: 500px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 `
 
 const Stage = styled.div`
@@ -22,13 +37,14 @@ const Stage = styled.div`
     border-radius: 25px;
     box-shadow: -20px 20px 30px 5px #9c612a;
     transition: all 0.2s ease-in-out;
-    
+
     p {
         font-size: 20px;
         color: whitesmoke;
     }
     
     &:hover {
+        flex-wrap: nowrap;
         width: 300px;
         height: 600px;
         margin: 10px;
