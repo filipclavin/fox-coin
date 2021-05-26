@@ -1,4 +1,7 @@
-import {useState, useEffect} from 'react';
+import Stages from './components/cards/Stages'
+import styled from 'styled-components';
+
+import { useState, useEffect } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import {
   BrowserRouter as Router,
@@ -15,18 +18,25 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 `;
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+`
 
 function App() {
   const [navToggleClicked, setNavToggleClicked] = useState(false);
 
   const toggleNav = () => setNavToggleClicked(!navToggleClicked);
 
-   const handleScroll = () => setNavToggleClicked(false);
+  const handleScroll = () => setNavToggleClicked(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +44,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <ContentWrapper>
     <h1>Hello there</h1>
     <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav}/>
@@ -51,7 +61,7 @@ function App() {
           </Switch>
       </Router>       
     <GlobalStyle />
-    </div>
+    </ContentWrapper>
   );
 }
 
