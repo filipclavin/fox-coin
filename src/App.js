@@ -9,6 +9,8 @@ import {
   Route
 } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
+import Background from "./components/splash/Background.js";
+import Description from "./components/splash/Description.js";
 
 const GlobalStyle = createGlobalStyle`
 h1{
@@ -31,6 +33,7 @@ const ContentWrapper = styled.div`
   height: 100vh;
 `
 
+
 function App() {
   const [navToggleClicked, setNavToggleClicked] = useState(false);
 
@@ -45,7 +48,8 @@ function App() {
 
   return (
     <ContentWrapper>
-      <h1>Hello there</h1>
+      <Background/>
+      <Description/>
       <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
         <Switch>
@@ -57,6 +61,7 @@ function App() {
           </Route>
           <Route path="/">
             {/* <Home /> */}
+
           </Route>
         </Switch>
       </Router>
