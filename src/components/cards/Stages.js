@@ -7,8 +7,8 @@ const StageWrapper = styled.div`
     align-items: center;
     align-content: space-around;
     width: 65%;
-    height: 100%;
-    margin:0 auto;
+    height: 600px;
+    margin: 0 auto;
     flex-wrap: wrap;
 `
 
@@ -23,6 +23,10 @@ const Stage = styled.div`
     box-shadow: -20px 20px 30px 5px #9c612a;
     transition: all 0.2s ease-in-out;
     
+    h2 {
+        font-weight: 500;
+    }
+
     p {
         font-size: 20px;
         color: whitesmoke;
