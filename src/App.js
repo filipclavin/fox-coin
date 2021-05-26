@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Description from "./components/splash/Description.js";
+import Footer from './components/footer/footer.js';
 
 import image from './resources/splash-image.png'
 
@@ -62,6 +63,7 @@ function App() {
       </Router>
       <Description />
       <Stages />
+      <Footer />
       <GlobalStyle />
     </>
   );
