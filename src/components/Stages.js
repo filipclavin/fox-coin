@@ -41,7 +41,6 @@ const Stage = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     background-color: #C28449;
     width: 275px;
     height: 500px;
@@ -60,7 +59,8 @@ const Stage = styled.div`
 
     img {
         position: relative;
-        bottom: -300px;
+        bottom: -250px;
+        margin-top: 50px;
         transition: all 0.3s ease-in-out;
     }
   
