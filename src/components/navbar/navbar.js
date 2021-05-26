@@ -96,7 +96,6 @@ const Nav = styled.nav`
     text-decoration: none;
     color: #000;
     }
-  }
 
   ul li {
     font-size: 22px;
@@ -120,23 +119,23 @@ const Nav = styled.nav`
   }
 `
 
-const Navbar = ({navToggleClicked, toggleNav}) => {
+const Navbar = ({ navToggleClicked, toggleNav }) => {
   return (
-  <section>
-    <Nav>
-      <div className={navToggleClicked ? "clicked" : ""} onClick={toggleNav} >
+    <section>
+      <Nav>
+        <div className={navToggleClicked ? "clicked" : ""} onClick={toggleNav} >
           <span></span>
           <span></span>
           <span></span>
-      </div>
-      <ul className="top-nav" id="js-menu">
-        <Link to="/about" onClick={toggleNav}><li className="menu-item"><span>.About</span></li></Link>
-        <Link to="/roadmap" onClick={toggleNav}><li className="menu-item"><span>.Roadmap</span></li></Link>
-        <Link to="/team" onClick={toggleNav}><li id="contact" className="menu-item"><span>.Team</span></li></Link>
-      </ul>       
+        </div>
+        <ul className="top-nav" id="js-menu">
+          <Link to="/about" onClick={toggleNav}><li className="menu-item"><span>.About</span></li></Link>
+          <Link to="/roadmap" onClick={toggleNav}><li className="menu-item"><span>.Roadmap</span></li></Link>
+          <Link to="/team" onClick={toggleNav}><li id="contact" className="menu-item"><span>.Team</span></li></Link>
+        </ul>
 
-    </Nav>
-  </section>
+      </Nav>
+    </section>
   )
 }
 
