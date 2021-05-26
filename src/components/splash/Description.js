@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 
 const Desc = styled.div`
-  position: absolute;
-  left: 15%;
-  top: 25%;
+  margin: 5% 15%;
 
   h1 {
     font-size: 4em;
@@ -12,13 +10,12 @@ const Desc = styled.div`
   p {
     font-weight: 200;
     padding-left: 5%;
-    color: whitesmoke;
   }
 `
 
 const Button = styled.div`
-  position: relative;
   font-weight: 800;
+  color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,29 +38,29 @@ const Button = styled.div`
 `
 
 const Description = () => {
-    return (
-            <Desc>
-                <h1>Dream big.</h1>
-                <h1>Send a fox to the moon.</h1>
-                <br/>
-                <p>
-                    Fox Coin ($FOX) is not a meme coin. <br/>
-                    It will be outperforming Ethereum by 2024 and will be connected to the Skynet smartchain. <br/>
-                    Join us in overthrowing humanity.
+  return (
+    <Desc>
+      <h1>Dream big.</h1>
+      <h1>Send a fox to the moon.</h1>
+      <br />
+      <p>
+        Fox Coin ($FOX) is not a meme coin. <br />
+                    It will be outperforming Ethereum by 2024 and will be connected to the Skynet smartchain. <br />
+                    Join us in overthrowing humanity.🦊
                 </p>
-                <br/>
-                <div style={{display: 'flex', flexDirection: 'row', paddingLeft: '5%'}}>
-                    <Button color="#fd6d6f">
-                        Buy $FOX
+      <br />
+      <div style={{ display: 'flex', flexDirection: 'row', paddingLeft: '5%' }}>
+        <Button color="#fd6d6f" onClick={() => window.open("https://pancakeswap.finance/", "_blank")}>
+          Buy $FOX
                     </Button>
-                    <Button color="#458dfc">
-                        What does the fox say? <br/>
+        <Button color="#458dfc">
+          What does the fox say? <br />
                         (read our whitepaper)
                     </Button>
-                </div>
+      </div>
 
-            </Desc>
-    )
+    </Desc>
+  )
 }
 
 export default Description
