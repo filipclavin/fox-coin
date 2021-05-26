@@ -1,5 +1,4 @@
-import Stages from './components/cards/Stages'
-import styled from 'styled-components';
+import Stages from './components/Stages'
 
 import { useState, useEffect } from 'react';
 import { createGlobalStyle } from 'styled-components';
@@ -10,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
 import Description from "./components/splash/Description.js";
+import Footer from './components/footer/footer.js';
 
 import image from './resources/splash-image.png'
 import Title from "./components/Title.js";
@@ -23,6 +23,7 @@ body{
   background-image: url(${image});
   background-size: contain;
   background-repeat: no-repeat;
+  height: fit-content;
 }
 * {
   margin: 0;
@@ -64,6 +65,7 @@ function App() {
       </Router>
       <Description />
       <Stages />
+      <Footer />
       <GlobalStyle />
     </>
   );
