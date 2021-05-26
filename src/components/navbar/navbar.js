@@ -66,6 +66,8 @@ z-index: 3;
 
 transform-origin: 0% 0%;
 transform: translate(-100%, 0);
+background:rgba(203, 232, 209, 0.99);
+border-radius: 100px 0 0 100px;
 @media screen and (min-width: 1024px ) {
   position: static;
   width: 100%;
@@ -77,6 +79,8 @@ transform: translate(-100%, 0);
   justify-content: space-around;
   align-items: center;
   transform: translate(0, 0);
+  background:rgba(203, 232, 209, 0.6);
+  border-radius: 20px;
 }
 }
 ul a {
