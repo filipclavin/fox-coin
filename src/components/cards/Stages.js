@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-const StageWrapper = styled.div`
-    box-sizing: border-box;
+const StageWrapper = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    align-content: space-around;
     width: 65%;
-    height: 600px;
+    height: 100vh;
     margin: 0 auto;
     flex-wrap: wrap;
 
@@ -29,6 +27,9 @@ const StageWrapper = styled.div`
 
 const Stage = styled.div`
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
     background-color: #C28449;
     width: 275px;
     height: 500px;
@@ -47,7 +48,7 @@ const Stage = styled.div`
 
     svg {
         position: relative;
-        bottom: -250px;
+        bottom: -300px;
         transition: all 0.3s ease-in-out;
     }
   
@@ -62,7 +63,7 @@ const Stage = styled.div`
     &:hover {
         flex-wrap: nowrap;
         width: 300px;
-        height: fit-content;
+        height: 600px;
         margin: 10px;
 
         transition: all 0.3s ease-in-out;
@@ -79,6 +80,7 @@ const Stage = styled.div`
 
         svg{
             bottom: 0;
+            justify-self: flex-end;
             transition: all 0.3s ease-in-out;
         }
     }

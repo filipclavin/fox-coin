@@ -22,6 +22,7 @@ body{
   background-image: url(${image});
   background-size: contain;
   background-repeat: no-repeat;
+  height: fit-content;
 }
 * {
   margin: 0;
