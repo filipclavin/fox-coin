@@ -9,8 +9,9 @@ import {
   Route
 } from 'react-router-dom';
 import Navbar from './components/navbar/navbar';
-import Background from "./components/splash/Background.js";
 import Description from "./components/splash/Description.js";
+
+import image from './resources/splash-image.png'
 
 const GlobalStyle = createGlobalStyle`
 h1{
@@ -18,6 +19,9 @@ h1{
 }
 body{
   font-family: 'Quicksand', sans-serif;
+  background-image: url(${image});
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 * {
   margin: 0;
@@ -25,13 +29,6 @@ body{
   box-sizing: border-box;
 }
 `;
-
-const ContentWrapper = styled.div`
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`
 
 
 function App() {
@@ -48,8 +45,6 @@ function App() {
 
   return (
     <>
-        <Background/>
-        <Description/>
       <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
         <Switch>
@@ -65,9 +60,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <ContentWrapper>
-        <Stages />
-      </ContentWrapper>
+      <Description />
+      <Stages />
       <GlobalStyle />
     </>
   );
