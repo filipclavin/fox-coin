@@ -44,25 +44,25 @@ function App() {
   }, [])
 
   return (
-   <>
-    <Router>
-        <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav}/>
-          <Switch>
-            <Route path="/projects">
-              {/* <Projects /> */}
-            </Route>
-            <Route path="/contact">
-              {/* <Contact /> */}
-            </Route>
-            <Route path="/">
-              {/* <Home /> */}
-            </Route>
-          </Switch>
-      </Router>    
+    <>
+      <Router>
+        <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
+        <Switch>
+          <Route path="/projects">
+            {/* <Projects /> */}
+          </Route>
+          <Route path="/contact">
+            {/* <Contact /> */}
+          </Route>
+          <Route path="/">
+            {/* <Home /> */}
+          </Route>
+        </Switch>
+      </Router>
       <ContentWrapper>
-        <Stages />   
+        <Stages />
       </ContentWrapper>
-    <GlobalStyle />
+      <GlobalStyle />
     </>
   );
 }
