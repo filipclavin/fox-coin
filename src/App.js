@@ -1,4 +1,4 @@
-import Stages from './components/cards/Stages'
+import Stages from './components/Stages'
 
 import { useState, useEffect } from 'react';
 import { createGlobalStyle } from 'styled-components';
