@@ -45,7 +45,6 @@ function App() {
 
   return (
     <ContentWrapper>
-    <h1>Hello there</h1>
     <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav}/>
           <Switch>
@@ -59,7 +58,8 @@ function App() {
               {/* <Home /> */}
             </Route>
           </Switch>
-      </Router>       
+      </Router>    
+      <Stages />   
     <GlobalStyle />
     </ContentWrapper>
   );

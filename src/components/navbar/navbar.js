@@ -18,6 +18,9 @@ div {
   align-items: center;
   justify-content: center;
   z-index: 4;
+  @media screen and (min-width: 1024px ){
+    display:none;
+  }
 }
 div span {
   display: block;
@@ -72,7 +75,7 @@ transform: translate(-100%, 0);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transform: translate(100%, 0);
+  transform: translate(0, 0);
 }
 }
 ul a {
