@@ -33,8 +33,13 @@ h2{
     font-weight:300;
   }
   .profile{
-    max-width:174px;
+    max-width:175px;
     border-radius: 50%;
+    margin-top: 15px;
+    &:hover{
+      position: relative;
+      top: -7px;
+    }
   }
   a img{
     max-width:174px;
