@@ -12,6 +12,7 @@ import Navbar from './components/navbar/navbar';
 import Description from "./components/splash/Description.js";
 
 import image from './resources/splash-image.png'
+import Title from "./components/Title.js";
 
 const GlobalStyle = createGlobalStyle`
 h1{
@@ -46,6 +47,7 @@ function App() {
   return (
     <>
       <Router>
+        <Title/>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
         <Switch>
           <Route path="/projects">
