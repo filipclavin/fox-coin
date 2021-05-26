@@ -33,11 +33,11 @@ h2{
     font-weight:300;
   }
   .profile{
-    max-width:200px;
+    max-width:174px;
     border-radius: 50%;
   }
   a img{
-    max-width:200px;
+    max-width:174px;
   }
 }
 }
