@@ -2,7 +2,6 @@ import Jesper from '../../resources/jesper.jpg';
 import Filip from '../../resources/filip.jpg';
 import Melinda from '../../resources/melinda.png';
 import styled from 'styled-components';
-import github from '../../resources/github-square.svg';
 
 const StyledFooter = styled.div`
 width: 100%;

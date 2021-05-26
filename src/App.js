@@ -49,15 +49,17 @@ function App() {
       <Router>
         <Navbar navToggleClicked={navToggleClicked} toggleNav={toggleNav} />
         <Switch>
-          <Route path="/projects">
+          <Route path="/about">
             {/* <Projects /> */}
           </Route>
-          <Route path="/contact">
+          <Route path="/roadmap">
             {/* <Contact /> */}
+          </Route>
+          <Route path="/team">
+            {/* <Home /> */}
           </Route>
           <Route path="/">
             {/* <Home /> */}
-
           </Route>
         </Switch>
       </Router>
