@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 import Fox from "./Fox.js";
 
+import Discord from "../../resources/icons/discord.png"
+import Github from "../../resources/icons/github.png"
+import Instagram from "../../resources/icons/instagram.png"
+import Telegram from "../../resources/icons/telegram.png"
+import Twitter from "../../resources/icons/twitter.png"
+import Youtube from "../../resources/icons/youtube.png"
+import Social from "./Social.js";
+
 const Desc = styled.div`
   margin: 5% 15%;
   display: flex;
@@ -62,8 +70,18 @@ const Description = () => {
                         (read our whitepaper)
                     </Button>
                 </div>
+                <div style={{marginTop: '10px', display: 'flex', flexDirection: 'row', paddingLeft: '5%'}}>
+                    <Social image={Discord}/>
+                    <Social image={Github}/>
+                    <Social image={Instagram}/>
+                    <Social image={Telegram}/>
+                    <Social image={Twitter}/>
+                    <Social image={Youtube}/>
+
+                </div>
             </div>
             <Fox/>
+
 
 
         </Desc>
